@@ -25,8 +25,7 @@ export default function App() {
      <Stack.Navigator initialRouteName="Navbar" >
       <Stack.Screen  name="Sangeet Riyaz"  component={Navbar} />
       <Stack.Screen name="Record" component={Record} />
-      <Stack.Screen name="Temp" component={Temp}  /> 
-      <Stack.Screen name='Piano' componenet={Piano} />
+      <Stack.Screen name="Temp" component={Temp}  />
     </Stack.Navigator>
     </ NavigationContainer>
   );
