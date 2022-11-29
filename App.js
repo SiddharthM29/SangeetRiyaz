@@ -14,7 +14,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Navbar from './Src/Navbar.js';
 import Temp from './Src/Temp';
 import Record from './Src/Record'
-import Piano from './Src/Record'
+import Play from './Src/Play'
+//import  Pitch from './Src/Pitch'
+//import Piano from './Src/Record'
 const Stack = createNativeStackNavigator();
 export default function App() {
   
@@ -23,9 +25,10 @@ export default function App() {
     
     <NavigationContainer>
      <Stack.Navigator initialRouteName="Navbar" >
-      <Stack.Screen  name="Sangeet Riyaz"  component={Navbar} />
+       <Stack.Screen  name="Sangeet Riyaz"  component ={Navbar} />
       <Stack.Screen name="Record" component={Record} />
       <Stack.Screen name="Temp" component={Temp}  />
+      <Stack.Screen name="Play" component={Play} />  
     </Stack.Navigator>
     </ NavigationContainer>
   );

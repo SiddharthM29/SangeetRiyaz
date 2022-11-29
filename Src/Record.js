@@ -32,7 +32,7 @@ const Record = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>Record</Text>
-      <Button
+      <Button style={styles.rec}
         title={recording ? 'Stop Recording' : 'Start Recording'}
         onPress={recording ? stopRecording : startRecording}
       ></Button> 
@@ -46,6 +46,9 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       backgroundColor: '#ecf0f1',
       padding: 10, 
+    },
+    rec : {
+      width :'30%'
     }
 
 })
