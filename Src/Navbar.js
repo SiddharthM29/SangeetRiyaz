@@ -23,9 +23,8 @@ import Record from './Record.js'
          <Button title="Menu" color='blac
          k' style={styles.menu} onPress={()=> navigation.navigate('Temp')}> </Button> 
          <Button title="Record" color='black' style={styles.menu} onPress={  handler  } > </Button>
-         <Button title="Piano" color='black' style={styles.menu} onPress={()=> navigation.navigate('Piano')}></Button>
-         <Button title="Play" color='black' style={styles.menu} onPress={()=> navigation.navigate('Play')}> </Button>
-
+         <Button title="Piano" color='black' style={styles.menu} onPress={()=> navigation.navigate('Piano')}> </Button> 
+         <Button title="play" color='black' style={styles.menu} ></Button>
   </View>
      
          <View style={styles.footer} >

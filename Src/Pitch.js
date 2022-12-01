@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import PitchTracker from "react-native-pitch-tracker";
 
-const Pitch = (navigate) => {
+const Pitch = ({navigation}) => {
       // Must do before start()  
 PitchTracker.prepare()
  
