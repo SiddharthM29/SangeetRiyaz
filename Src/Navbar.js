@@ -3,6 +3,7 @@ import { FlatList,StyleSheet, Text, View,TouchableOpacity  } from 'react-native'
 import { Button, Linking } from 'react-native-web';
 import {Dimensions} from 'react-native';
 import {useState} from 'react';
+import {WebView} from 'react-native-webview';
 //import Permissions from 'react-native-permissions'
 import Record from './Record.js'
  const Navbar=({navigation})=>{
@@ -25,10 +26,14 @@ import Record from './Record.js'
          <Button title="Record" color='black' style={styles.menu} onPress={  handler  } > </Button>
          <Button title="Piano" color='black' style={styles.menu} onPress={()=> navigation.navigate('Piano')}> </Button> 
          <Button title="play" color='black' style={styles.menu} ></Button>
+        
+
   </View>
      
          <View style={styles.footer} >
           <Record/>
+          <WebView originWhitelist={['*']} source={{html:'<h1> Hello world</h1>'}} />
+
           </View> 
    
        </View>  
